@@ -15,8 +15,10 @@ return {
     ["<leader>tj"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
     ["<leader>tl"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "ToggleTerm vertical split" },
     ["<leader>ed"] = {"<cmd>DBUIToggle<cr>", desc= "Toggle Database Explorer"},
-    ["<leader>ee"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" }
-
+    ["<leader>ee"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
+    ["<leader>wk"] = { function() vim.cmd.tabnext() end, desc = "Next tab" },
+    ["<leader>wj"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" },
+    ["<leader>wn"] = { function() vim.cmd.tabnew() end, desc = "New tab" },
   },
   t = {
     -- setting a mapping to false will disable it
