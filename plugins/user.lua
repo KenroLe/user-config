@@ -9,4 +9,10 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "kristijanhusak/vim-dadbod-ui",
+    event = 'dadbod',
+    lazy = false,
+    config = function() require('vim-dadbod-ui').setup(opts) end
+  }
 }
