@@ -22,6 +22,7 @@ return {
     ["<leader>wk"] = { function() vim.cmd.tabnext() end, desc = "Next tab" },
     ["<leader>wj"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" },
     ["<leader>wn"] = { function() vim.cmd.tabnew() end, desc = "New tab" },
+    ["<leader>wq"] = { function() vim.cmd.tabclose() end, desc = "Close tab" },
   },
   t = {
     -- setting a mapping to false will disable it
