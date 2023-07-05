@@ -6,11 +6,9 @@
 return {
   -- first key is the mode
   n = {
-    ["<leader>t"] = false,
-    ["<leader>e"] = false,
-    ["<S-k>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
-    ["<S-j>"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer"},
-    ["<leader>x"] = {function() require("astronvim.utils.buffer").close() end, desc = "Close current buffer"},
+    ["<leader>bk"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+    ["<leader>bj"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer"},
+    ["<leader>x"]  = {function() require("astronvim.utils.buffer").close() end, desc = "Close current buffer"},
     -- terminal
     ["<leader>tt"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "ToggleTerm float" },
     ["<leader>tj"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
@@ -23,9 +21,9 @@ return {
     ["<leader>wj"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" },
     ["<leader>wn"] = { function() vim.cmd.tabnew() end, desc = "New tab" },
     ["<leader>wq"] = { function() vim.cmd.tabclose() end, desc = "Close tab" },
+    ["<C-c>"] = {"<esc>"}
   },
   t = {
     -- setting a mapping to false will disable it
-    ["<esc>"] = false,
   },
 }
