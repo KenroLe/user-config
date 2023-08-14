@@ -1,3 +1,5 @@
+I've moved to lazyvim as a base you can find my config in my pinned repos
+
 # AstroNvim User Configuration Example
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
